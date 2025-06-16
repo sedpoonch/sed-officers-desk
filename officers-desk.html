@@ -3,47 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Useful Links</title>
+  <title>Officer's Desk - SED Poonch</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f0f2f5;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fa;
       margin: 0;
       padding: 20px;
       text-align: center;
     }
+
     h1 {
-      color: #333;
+      color: #003366;
       margin-bottom: 30px;
     }
-    .button-container {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      max-width: 400px;
-      margin: 0 auto;
+
+    .officer-card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 500px;
+      transition: transform 0.3s ease;
     }
-    a.button {
-      background-color: #1e88e5;
-      color: white;
-      text-decoration: none;
-      padding: 14px 20px;
-      border-radius: 8px;
+
+    .officer-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .officer-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #0077cc;
+      box-shadow: 0 4px 12px rgba(0, 119, 204, 0.4);
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .officer-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #003366;
+      margin-bottom: 8px;
+    }
+
+    .officer-title {
       font-size: 16px;
-      transition: background 0.3s;
+      color: #666666;
+      margin-bottom: 12px;
     }
-    a.button:hover {
-      background-color: #1565c0;
+
+    .officer-bio {
+      font-size: 15px;
+      color: #444;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
-  <h1>Useful Links</h1>
-  <div class="button-container">
-    <a class="button" href="https://example.com" target="_blank">Visit Example</a>
-    <a class="button" href="https://google.com" target="_blank">Open Google</a>
-    <a class="button" href="https://your-link.com" target="_blank">Another Link</a>
-    <!-- Add more buttons as needed -->
+
+  <h1>Officer's Desk</h1>
+
+  <!-- Officer 1 -->
+  <div class="officer-card">
+    <img class="officer-img" src="https://via.placeholder.com/150" alt="Officer 1">
+    <div class="officer-name">Mr. A.B. Khan</div>
+    <div class="officer-title">Chief Education Officer</div>
+    <div class="officer-bio">
+      Mr. Khan has been a visionary in the education sector, bringing over 20 years of experience. He leads with commitment and ensures academic excellence across the district.
+    </div>
   </div>
+
+  <!-- Officer 2 -->
+  <div class="officer-card">
+    <img class="officer-img" src="https://via.placeholder.com/150" alt="Officer 2">
+    <div class="officer-name">Ms. S. Fatima</div>
+    <div class="officer-title">District Academic Coordinator</div>
+    <div class="officer-bio">
+      A mentor to many, Ms. Fatima has been instrumental in launching several quality initiatives to uplift teaching standards and learning outcomes.
+    </div>
+  </div>
+
+  <!-- Officer 3 -->
+  <div class="officer-card">
+    <img class="officer-img" src="https://via.placeholder.com/150" alt="Officer 3">
+    <div class="officer-name">Mr. R. Mehmood</div>
+    <div class="officer-title">IT & Infrastructure In-charge</div>
+    <div class="officer-bio">
+      Passionate about digital education, Mr. Mehmood has modernized numerous schools, bringing smart classrooms and IT tools into the mainstream.
+    </div>
+  </div>
+
 </body>
 </html>
