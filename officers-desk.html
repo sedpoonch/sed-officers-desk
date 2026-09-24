@@ -3,97 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Officer's Desk - SED Poonch</title>
+  <title>Officer's Desk</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f5f7fa;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #F4F6F8;
       margin: 0;
       padding: 20px;
       text-align: center;
     }
 
-    h1 {
-      color: #003366;
-      margin-bottom: 30px;
+    h2 {
+      color: #005B9F;
+      margin-bottom: 24px;
+      font-size: 24px;
     }
 
-    .officer-card {
-      background: #ffffff;
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #ffffff;
       border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-      padding: 25px;
-      margin: 20px auto;
-      width: 90%;
-      max-width: 500px;
-      transition: transform 0.3s ease;
+      padding: 24px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
     }
 
-    .officer-card:hover {
-      transform: translateY(-6px);
+    .card:hover, .card:active {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 15px rgba(0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.05);
     }
 
-    .officer-img {
-      width: 150px;
-      height: 150px;
+    .profile-img {
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
-      border: 5px solid #0077cc;
-      box-shadow: 0 4px 12px rgba(0, 119, 204, 0.4);
       object-fit: cover;
-      margin-bottom: 15px;
+      border: 3px solid #E0E5EC;
+      margin-bottom: 16px;
     }
 
-    .officer-name {
+    .name {
       font-size: 20px;
       font-weight: bold;
-      color: #003366;
-      margin-bottom: 8px;
+      color: #222;
+      margin-bottom: 4px;
     }
 
-    .officer-title {
-      font-size: 16px;
-      color: #666666;
+    .title {
+      font-size: 15px;
+      color: #005B9F;
+      font-weight: 600;
       margin-bottom: 12px;
     }
 
-    .officer-bio {
+    .bio {
       font-size: 15px;
-      color: #444;
+      color: #555;
       line-height: 1.6;
+      text-align: justify;
+      margin: 0;
     }
   </style>
 </head>
 <body>
 
-  <h1>Officer's Desk</h1>
+  <h2>Officer's Desk</h2>
 
-  <!-- Officer 1 -->
-  <div class="officer-card">
-    <img class="officer-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIhmCPNe8BXn5f0HJmGQ5aCe3HHGlLUTGUyhp5JMxU4wE8Zv_gz0XlzbM-oQAXiPp2cDFpdlY0YUuOc0G5iaBcRInArDPUzYnsYPsowcVeKWDhKIP4EMVL68M5jf7sp5L8XFfD0u4pnbFTKId5sJrHyZEaWbygy1mnK9oUSZ3TV7igUiacAUo6_zD_A0U/s1600/CEO%20Poonch.png" alt="Officer 1">
-    <div class="officer-name">Mr. Iftikhar Hussain Shah</div>
-    <div class="officer-title">Chief Education Officer</div>
-    <div class="officer-bio">
-      Mr. Kha has been a visionary in the education sector, bringing over 20 years of experience. He leads with commitment and ensures academic excellence across the district.
+  <div class="container">
+    <!-- Officer 1 -->
+    <div class="card">
+      <img class="profile-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIhmCPNe8BXn5f0HJmGQ5aCe3HHGlLUTGUyhp5JMxU4wE8Zv_gz0XlzbM-oQAXiPp2cDFpdlY0YUuOc0G5iaBcRInArDPUzYnsYPsowcVeKWDhKIP4EMVL68M5jf7sp5L8XFfD0u4pnbFTKId5sJrHyZEaWbygy1mnK9oUSZ3TV7igUiacAUo6_zD_A0U/s1600/CEO%20Poonch.png" alt="Mr. Iftikhar Hussain Shah">
+      <div class="name">Mr. Iftikhar Hussain Shah</div>
+      <div class="title">Chief Education Officer</div>
+      <p class="bio">Mr. Kha has been a visionary in the education sector, bringing over 20 years of experience. He leads with commitment and ensures academic excellence across the district.</p>
     </div>
-  </div>
 
-  <!-- Officer 2 -->
-  <div class="officer-card">
-    <img class="officer-img" src="https://via.placeholder.com/150" alt="Officer 2">
-    <div class="officer-name">Ms. S. Fatima</div>
-    <div class="officer-title">District Academic Coordinator</div>
-    <div class="officer-bio">
-      A mentor to many, Ms. Fatima has been instrumental in launching several quality initiatives to uplift teaching standards and learning outcomes.
+    <!-- Officer 2 -->
+    <div class="card">
+      <img class="profile-img" src="https://via.placeholder.com/150" alt="Ms. S. Fatima">
+      <div class="name">Ms. S. Fatima</div>
+      <div class="title">District Academic Coordinator</div>
+      <p class="bio">A mentor to many, Ms. Fatima has been instrumental in launching several quality initiatives to uplift teaching standards and learning outcomes.</p>
     </div>
-  </div>
 
-  <!-- Officer 3 -->
-  <div class="officer-card">
-    <img class="officer-img" src="https://via.placeholder.com/150" alt="Officer 3">
-    <div class="officer-name">Mr. R. Mehmood</div>
-    <div class="officer-title">IT & Infrastructure In-charge</div>
-    <div class="officer-bio">
-      Passionate about digital education, Mr. Mehmood has modernized numerous schools, bringing smart classrooms and IT tools into the mainstream.
+    <!-- Officer 3 -->
+    <div class="card">
+      <img class="profile-img" src="https://via.placeholder.com/150" alt="Mr. R. Mehmood">
+      <div class="name">Mr. R. Mehmood</div>
+      <div class="title">IT & Infrastructure In-charge</div>
+      <p class="bio">Passionate about digital education, Mr. Mehmood has modernized numerous schools, bringing smart classrooms and IT tools into the mainstream.</p>
     </div>
   </div>
 
